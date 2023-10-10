@@ -394,6 +394,29 @@
       createTwelve.remove()
   }, 1000);
   };
+
+  const divThirteen = root.children[2].children[11];
+  console.log(divThirteen);
+
+  divThirteen.addEventListener('click', transition)
+  function transition (){
+    const createThirteen = document.createElement("div")
+    root.appendChild(createThirteen)
+    createThirteen.style.width = "100vw"
+    createThirteen.style.height = "100vh"
+    createThirteen.style.backdropFilter = "blur(5px)"
+    createThirteen.style.position = "absolute"
+    createThirteen.style.fontSize = "3rem"
+    createThirteen.style.display = "flex"
+    createThirteen.style.alignItems = "center"
+    createThirteen.style.justifyContent = "center"
+    createThirteen.textContent = "당신의 심리상태 : 신나서 골반으로 무지개를 만들어내고 싶군요!" 
+    createThirteen.style.fontWeight = "bolder" 
+
+    setTimeout(function(){
+      createThirteen.remove()
+  }, 1000);
+  };
   </script>
 </body>
 </html>

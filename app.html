@@ -188,6 +188,51 @@
   }, 1000);
   };
 
+  const divFour = root.children[2].children[3];
+  console.log(divFour);
+
+  divFour.addEventListener('click', transition)
+  function transition (){
+    const createFour = document.createElement("div")
+    root.appendChild(createFour)
+    createFour.style.width = "100vw"
+    createFour.style.height = "100vh"
+    createFour.style.backdropFilter = "blur(5px)"
+    createFour.style.position = "absolute"
+    createFour.style.fontSize = "3rem"
+    createFour.style.display = "flex"
+    createFour.style.alignItems = "center"
+    createFour.style.justifyContent = "center"
+    createFour.textContent = "당신의 심리상태 : 격한 감동을 받으셨군요!" 
+    createFour.style.fontWeight = "bolder" 
+
+    setTimeout(function(){
+      createFour.remove()
+  }, 1000);
+};
+
+  const divFive = root.children[2].children[4];
+  console.log(divFive);
+
+  divFive.addEventListener('click', transition)
+  function transition (){
+    const createFive = document.createElement("div")
+    root.appendChild(createFive)
+    createFive.style.width = "100vw"
+    createFive.style.height = "100vh"
+    createFive.style.backdropFilter = "blur(5px)"
+    createFive.style.position = "absolute"
+    createFive.style.fontSize = "3rem"
+    createFive.style.display = "flex"
+    createFive.style.alignItems = "center"
+    createFive.style.justifyContent = "center"
+    createFive.textContent = "당신의 심리상태 : 너무 황당해 할말을 잃으셨군요!" 
+    createFive.style.fontWeight = "bolder" 
+
+    setTimeout(function(){
+      createFive.remove()
+  }, 1000);
+  };
   </script>
 </body>
 </html>

@@ -371,6 +371,29 @@
       createEleven.remove()
   }, 1000);
   };
+
+  const divTwelve = root.children[2].children[11];
+  console.log(divTwelve);
+
+  divTwelve.addEventListener('click', transition)
+  function transition (){
+    const createTwelve = document.createElement("div")
+    root.appendChild(createTwelve)
+    createTwelve.style.width = "100vw"
+    createTwelve.style.height = "100vh"
+    createTwelve.style.backdropFilter = "blur(5px)"
+    createTwelve.style.position = "absolute"
+    createTwelve.style.fontSize = "3rem"
+    createTwelve.style.display = "flex"
+    createTwelve.style.alignItems = "center"
+    createTwelve.style.justifyContent = "center"
+    createTwelve.textContent = "당신의 심리상태 : 멍때리고 싶군요!" 
+    createTwelve.style.fontWeight = "bolder" 
+
+    setTimeout(function(){
+      createTwelve.remove()
+  }, 1000);
+  };
   </script>
 </body>
 </html>

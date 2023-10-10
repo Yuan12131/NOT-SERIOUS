@@ -142,30 +142,7 @@
   }, 1000);
   };
 
-  const divTwo = root.children[2].children[1];
-  console.log(divTwo);
-
-
-  divTwo.addEventListener('click', transition)
-  function transition (){
-    const createTwo = document.createElement("div")
-    root.appendChild(createTwo)
-    createTwo.style.width = "100vw"
-    createTwo.style.height = "100vh"
-    createTwo.style.backdropFilter = "blur(5px)"
-    createTwo.style.position = "absolute"
-    createTwo.style.fontSize = "3rem"
-    createTwo.style.display = "flex"
-    createTwo.style.alignItems = "center"
-    createTwo.style.justifyContent = "center"
-    createTwo.textContent = "당신의 심리상태 : 이를 꽉 깨물고 주먹을 쥘만큼 빡친 상태군요🤬" 
-    createTwo.style.fontWeight = "bolder" 
-
-    setTimeout(function(){
-      createTwo.remove()
-  }, 1000);
-  };
-
+ 
 
 
 

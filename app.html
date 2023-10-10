@@ -325,6 +325,29 @@
       createNine.remove()
   }, 1000);
   };
+
+  const divTen = root.children[2].children[9];
+  console.log(divTen);
+
+  divTen.addEventListener('click', transition)
+  function transition (){
+    const createTen = document.createElement("div")
+    root.appendChild(createTen)
+    createTen.style.width = "100vw"
+    createTen.style.height = "100vh"
+    createTen.style.backdropFilter = "blur(5px)"
+    createTen.style.position = "absolute"
+    createTen.style.fontSize = "3rem"
+    createTen.style.display = "flex"
+    createTen.style.alignItems = "center"
+    createTen.style.justifyContent = "center"
+    createTen.textContent = "당신의 심리상태 : 너무 신나서 춤을 추고싶군요!" 
+    createTen.style.fontWeight = "bolder" 
+
+    setTimeout(function(){
+      createTen.remove()
+  }, 1000);
+  };
   </script>
 </body>
 </html>

@@ -233,6 +233,31 @@
       createFive.remove()
   }, 1000);
   };
+
+  const divSix = root.children[2].children[5];
+  console.log(divSix);
+
+  divSix.addEventListener('click', transition)
+  function transition (){
+    const createSix = document.createElement("div")
+    root.appendChild(createSix)
+    createSix.style.width = "100vw"
+    createSix.style.height = "100vh"
+    createSix.style.backdropFilter = "blur(5px)"
+    createSix.style.position = "absolute"
+    createSix.style.fontSize = "3rem"
+    createSix.style.display = "flex"
+    createSix.style.alignItems = "center"
+    createSix.style.justifyContent = "center"
+    createSix.textContent = "당신의 심리상태 : 너무 슬퍼서 엉엉울고 싶군요!" 
+    createSix.style.fontWeight = "bolder" 
+
+    setTimeout(function(){
+      createSix.remove()
+  }, 1000);
+  };
+
+  
   </script>
 </body>
 </html>

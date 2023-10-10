@@ -115,11 +115,59 @@
     </div>
   </div>
   <script>
-  root = document.getElementById("root")
-  console.dir("root")
+  const root = document.getElementById("root");
+  console.dir(root);
 
-  divOne = root.children[2].children[0]
-  console.log(divOne)
+  const divOne = root.children[2].children[0];
+  console.log(divOne);
+
+
+  divOne.addEventListener('click', transition)
+  function transition (){
+    const createOne = document.createElement("div")
+    root.appendChild(createOne)
+    createOne.style.width = "100vw"
+    createOne.style.height = "100vh"
+    createOne.style.backdropFilter = "blur(5px)"
+    createOne.style.position = "absolute"
+    createOne.style.fontSize = "3rem"
+    createOne.style.display = "flex"
+    createOne.style.alignItems = "center"
+    createOne.style.justifyContent = "center"
+    createOne.textContent = "당신의 심리상태 : 주먹을 불끈 쥘 만큼 화가 난 상태입니다😡" 
+    createOne.style.fontWeight = "bolder" 
+
+    setTimeout(function(){
+    createOne.remove()
+  }, 1000);
+  };
+
+  const divTwo = root.children[2].children[1];
+  console.log(divTwo);
+
+
+  divTwo.addEventListener('click', transition)
+  function transition (){
+    const createTwo = document.createElement("div")
+    root.appendChild(createTwo)
+    createTwo.style.width = "100vw"
+    createTwo.style.height = "100vh"
+    createTwo.style.backdropFilter = "blur(5px)"
+    createTwo.style.position = "absolute"
+    createTwo.style.fontSize = "3rem"
+    createTwo.style.display = "flex"
+    createTwo.style.alignItems = "center"
+    createTwo.style.justifyContent = "center"
+    createTwo.textContent = "당신의 심리상태 : 이를 꽉 깨물고 주먹을 쥘만큼 빡친 상태군요🤬" 
+    createTwo.style.fontWeight = "bolder" 
+
+    setTimeout(function(){
+      createTwo.remove()
+  }, 1000);
+  };
+
+
+
 
   </script>
 </body>

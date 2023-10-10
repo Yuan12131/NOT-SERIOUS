@@ -257,7 +257,28 @@
   }, 1000);
   };
 
-  
+  const divSeven = root.children[2].children[6];
+  console.log(divSeven);
+
+  divSeven.addEventListener('click', transition)
+  function transition (){
+    const createSeven = document.createElement("div")
+    root.appendChild(createSeven)
+    createSeven.style.width = "100vw"
+    createSeven.style.height = "100vh"
+    createSeven.style.backdropFilter = "blur(5px)"
+    createSeven.style.position = "absolute"
+    createSeven.style.fontSize = "3rem"
+    createSeven.style.display = "flex"
+    createSeven.style.alignItems = "center"
+    createSeven.style.justifyContent = "center"
+    createSeven.textContent = "당신의 심리상태 : 너무 슬퍼서 병나발을 불고싶군요!" 
+    createSeven.style.fontWeight = "bolder" 
+
+    setTimeout(function(){
+      createSeven.remove()
+  }, 1000);
+  };
   </script>
 </body>
 </html>

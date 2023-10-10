@@ -279,6 +279,29 @@
       createSeven.remove()
   }, 1000);
   };
+
+  const divEight = root.children[2].children[7];
+  console.log(divEight);
+
+  divEight.addEventListener('click', transition)
+  function transition (){
+    const createEight = document.createElement("div")
+    root.appendChild(createEight)
+    createEight.style.width = "100vw"
+    createEight.style.height = "100vh"
+    createEight.style.backdropFilter = "blur(5px)"
+    createEight.style.position = "absolute"
+    createEight.style.fontSize = "3rem"
+    createEight.style.display = "flex"
+    createEight.style.alignItems = "center"
+    createEight.style.justifyContent = "center"
+    createEight.textContent = "당신의 심리상태 : 웃겨 죽겠군요!" 
+    createEight.style.fontWeight = "bolder" 
+
+    setTimeout(function(){
+      createEight.remove()
+  }, 1000);
+  };
   </script>
 </body>
 </html>

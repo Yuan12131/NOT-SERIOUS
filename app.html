@@ -118,12 +118,13 @@
   const root = document.getElementById("root");
   console.dir(root);
 
-  const divOne = root.children[2].children[0];
+  const div = root.children[2]
+  console.log(div);
+
+  const divOne = div.children[0];
   console.log(divOne);
-
-
-  divOne.addEventListener('click', transition)
-  function transition (){
+  
+  divOne.addEventListener('click', function(){
     const createOne = document.createElement("div")
     root.appendChild(createOne)
     createOne.style.width = "100vw"
@@ -136,17 +137,16 @@
     createOne.style.justifyContent = "center"
     createOne.textContent = "당신의 심리상태 : 주먹을 불끈 쥘 만큼 화가 난 상태입니다😡" 
     createOne.style.fontWeight = "bolder" 
-
+    
     setTimeout(function(){
-    createOne.remove()
-  }, 1000);
-  };
-
-  const divTwo = root.children[2].children[1];
+      createOne.remove()
+    }, 1000);
+  });
+  
+  const divTwo = div.children[1];
   console.log(divTwo);
-
-  divTwo.addEventListener('click', transition)
-  function transition (){
+  
+  divTwo.addEventListener('click', function(){
     const createTwo = document.createElement("div")
     root.appendChild(createTwo)
     createTwo.style.width = "100vw"
@@ -163,13 +163,12 @@
     setTimeout(function(){
       createTwo.remove()
   }, 1000);
-  };
+  });
 
   const divThree = root.children[2].children[2];
   console.log(divThree);
 
-  divThree.addEventListener('click', transition)
-  function transition (){
+  divThree.addEventListener('click', function(){
     const createThree = document.createElement("div")
     root.appendChild(createThree)
     createThree.style.width = "100vw"
@@ -186,13 +185,12 @@
     setTimeout(function(){
       createThree.remove()
   }, 1000);
-  };
+  });
 
   const divFour = root.children[2].children[3];
   console.log(divFour);
 
-  divFour.addEventListener('click', transition)
-  function transition (){
+  divFour.addEventListener('click', function(){
     const createFour = document.createElement("div")
     root.appendChild(createFour)
     createFour.style.width = "100vw"
@@ -209,13 +207,12 @@
     setTimeout(function(){
       createFour.remove()
   }, 1000);
-};
+});
 
   const divFive = root.children[2].children[4];
   console.log(divFive);
 
-  divFive.addEventListener('click', transition)
-  function transition (){
+  divFive.addEventListener('click', function(){
     const createFive = document.createElement("div")
     root.appendChild(createFive)
     createFive.style.width = "100vw"
@@ -232,13 +229,12 @@
     setTimeout(function(){
       createFive.remove()
   }, 1000);
-  };
+  });
 
   const divSix = root.children[2].children[5];
   console.log(divSix);
 
-  divSix.addEventListener('click', transition)
-  function transition (){
+  divSix.addEventListener('click', function(){
     const createSix = document.createElement("div")
     root.appendChild(createSix)
     createSix.style.width = "100vw"
@@ -255,13 +251,12 @@
     setTimeout(function(){
       createSix.remove()
   }, 1000);
-  };
+  });
 
   const divSeven = root.children[2].children[6];
   console.log(divSeven);
 
-  divSeven.addEventListener('click', transition)
-  function transition (){
+  divSeven.addEventListener('click', function(){
     const createSeven = document.createElement("div")
     root.appendChild(createSeven)
     createSeven.style.width = "100vw"
@@ -278,13 +273,12 @@
     setTimeout(function(){
       createSeven.remove()
   }, 1000);
-  };
+  });
 
   const divEight = root.children[2].children[7];
   console.log(divEight);
 
-  divEight.addEventListener('click', transition)
-  function transition (){
+  divEight.addEventListener('click', function(){
     const createEight = document.createElement("div")
     root.appendChild(createEight)
     createEight.style.width = "100vw"
@@ -301,13 +295,12 @@
     setTimeout(function(){
       createEight.remove()
   }, 1000);
-  };
+  });
 
   const divNine = root.children[2].children[8];
   console.log(divNine);
 
-  divNine.addEventListener('click', transition)
-  function transition (){
+  divNine.addEventListener('click', function(){
     const createNine = document.createElement("div")
     root.appendChild(createNine)
     createNine.style.width = "100vw"
@@ -324,36 +317,12 @@
     setTimeout(function(){
       createNine.remove()
   }, 1000);
-  };
+  });
 
   const divTen = root.children[2].children[9];
   console.log(divTen);
 
-  divTen.addEventListener('click', transition)
-  function transition (){
-    const createTen = document.createElement("div")
-    root.appendChild(createTen)
-    createTen.style.width = "100vw"
-    createTen.style.height = "100vh"
-    createTen.style.backdropFilter = "blur(10px)"
-    createTen.style.position = "absolute"
-    createTen.style.fontSize = "3rem"
-    createTen.style.display = "flex"
-    createTen.style.alignItems = "center"
-    createTen.style.justifyContent = "center"
-    createTen.textContent = "당신의 심리상태 : 너무 신나서 춤을 추고싶군요!" 
-    createTen.style.fontWeight = "bolder" 
-
-    setTimeout(function(){
-      createTen.remove()
-  }, 1000);
-  };
-
-  const divEleven = root.children[2].children[10];
-  console.log(divEleven);
-
-  divEleven.addEventListener('click', transition)
-  function transition (){
+  divTen.addEventListener('click', function(){
     const createEleven = document.createElement("div")
     root.appendChild(createEleven)
     createEleven.style.width = "100vw"
@@ -370,13 +339,34 @@
     setTimeout(function(){
       createEleven.remove()
   }, 1000);
-  };
+  });
+
+  const divEleven = root.children[2].children[10];
+  console.log(divEleven);
+
+  divEleven.addEventListener('click', function(){
+    const createEleven = document.createElement("div")
+    root.appendChild(createEleven)
+    createEleven.style.width = "100vw"
+    createEleven.style.height = "100vh"
+    createEleven.style.backdropFilter = "blur(10px)"
+    createEleven.style.position = "absolute"
+    createEleven.style.fontSize = "3rem"
+    createEleven.style.display = "flex"
+    createEleven.style.alignItems = "center"
+    createEleven.style.justifyContent = "center"
+    createEleven.textContent = "당신의 심리상태 : 멍 때리고 싶군요!" 
+    createEleven.style.fontWeight = "bolder" 
+
+    setTimeout(function(){
+      createEleven.remove()
+  }, 1000);
+  });
 
   const divTwelve = root.children[2].children[11];
   console.log(divTwelve);
 
-  divTwelve.addEventListener('click', transition)
-  function transition (){
+  divTwelve.addEventListener('click', function(){
     const createTwelve = document.createElement("div")
     root.appendChild(createTwelve)
     createTwelve.style.width = "100vw"
@@ -387,36 +377,14 @@
     createTwelve.style.display = "flex"
     createTwelve.style.alignItems = "center"
     createTwelve.style.justifyContent = "center"
-    createTwelve.textContent = "당신의 심리상태 : 멍때리고 싶군요!" 
+    createTwelve.textContent = "당신의 심리상태 : 신나서 골반으로 무지개를 만들어내고 싶군요!" 
     createTwelve.style.fontWeight = "bolder" 
 
     setTimeout(function(){
       createTwelve.remove()
   }, 1000);
-  };
-
-  const divThirteen = root.children[2].children[11];
-  console.log(divThirteen);
-
-  divThirteen.addEventListener('click', transition)
-  function transition (){
-    const createThirteen = document.createElement("div")
-    root.appendChild(createThirteen)
-    createThirteen.style.width = "100vw"
-    createThirteen.style.height = "100vh"
-    createThirteen.style.backdropFilter = "blur(10px)"
-    createThirteen.style.position = "absolute"
-    createThirteen.style.fontSize = "3rem"
-    createThirteen.style.display = "flex"
-    createThirteen.style.alignItems = "center"
-    createThirteen.style.justifyContent = "center"
-    createThirteen.textContent = "당신의 심리상태 : 신나서 골반으로 무지개를 만들어내고 싶군요!" 
-    createThirteen.style.fontWeight = "bolder" 
-
-    setTimeout(function(){
-      createThirteen.remove()
-  }, 1000);
-  };
+  });
+  
   </script>
 </body>
 </html>

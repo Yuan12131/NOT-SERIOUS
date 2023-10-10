@@ -165,6 +165,29 @@
   }, 1000);
   };
 
+  const divThree = root.children[2].children[2];
+  console.log(divThree);
+
+  divThree.addEventListener('click', transition)
+  function transition (){
+    const createThree = document.createElement("div")
+    root.appendChild(createThree)
+    createThree.style.width = "100vw"
+    createThree.style.height = "100vh"
+    createThree.style.backdropFilter = "blur(5px)"
+    createThree.style.position = "absolute"
+    createThree.style.fontSize = "3rem"
+    createThree.style.display = "flex"
+    createThree.style.alignItems = "center"
+    createThree.style.justifyContent = "center"
+    createThree.textContent = "당신의 심리상태 : 너무 좋아 동공이 풀릴 지경이군요!" 
+    createThree.style.fontWeight = "bolder" 
+
+    setTimeout(function(){
+      createThree.remove()
+  }, 1000);
+  };
+
   </script>
 </body>
 </html>

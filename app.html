@@ -348,6 +348,29 @@
       createTen.remove()
   }, 1000);
   };
+
+  const divEleven = root.children[2].children[10];
+  console.log(divEleven);
+
+  divEleven.addEventListener('click', transition)
+  function transition (){
+    const createEleven = document.createElement("div")
+    root.appendChild(createEleven)
+    createEleven.style.width = "100vw"
+    createEleven.style.height = "100vh"
+    createEleven.style.backdropFilter = "blur(5px)"
+    createEleven.style.position = "absolute"
+    createEleven.style.fontSize = "3rem"
+    createEleven.style.display = "flex"
+    createEleven.style.alignItems = "center"
+    createEleven.style.justifyContent = "center"
+    createEleven.textContent = "당신의 심리상태 : 소라게가 되고 싶군요!" 
+    createEleven.style.fontWeight = "bolder" 
+
+    setTimeout(function(){
+      createEleven.remove()
+  }, 1000);
+  };
   </script>
 </body>
 </html>

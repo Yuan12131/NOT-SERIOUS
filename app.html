@@ -302,6 +302,29 @@
       createEight.remove()
   }, 1000);
   };
+
+  const divNine = root.children[2].children[8];
+  console.log(divNine);
+
+  divNine.addEventListener('click', transition)
+  function transition (){
+    const createNine = document.createElement("div")
+    root.appendChild(createNine)
+    createNine.style.width = "100vw"
+    createNine.style.height = "100vh"
+    createNine.style.backdropFilter = "blur(5px)"
+    createNine.style.position = "absolute"
+    createNine.style.fontSize = "3rem"
+    createNine.style.display = "flex"
+    createNine.style.alignItems = "center"
+    createNine.style.justifyContent = "center"
+    createNine.textContent = "당신의 심리상태 : 너무 신나서 춤을 추고싶군요!" 
+    createNine.style.fontWeight = "bolder" 
+
+    setTimeout(function(){
+      createNine.remove()
+  }, 1000);
+  };
   </script>
 </body>
 </html>
